@@ -1,0 +1,25 @@
+<div class="my-4">
+    <h3>Cambio moneda</h3>
+</div>
+  <div class="form-row my-4">
+    <div class="form-group col-md-4">
+      <label>Dolar</label>
+      <input type="number" class="form-control" name="cambioArgentino1" [(ngModel)]="cambioArgentino1" (keyup)="onChanges1($event)">
+    </div>
+    <div class="form-group col-md-4">
+      <label>Argentinos</label>
+      <input type="number" class="form-control" value={{cambioDolar}} disabled>
+    </div>
+  </div>
+
+  <div class="form-row my-4">
+    <div class="form-group col-md-4">
+      <label>Chilenos</label>
+      <input type="number" class="form-control"  name="cambioArgentino2" [(ngModel)]="cambioArgentino2" (keyup)="onChanges2($event)">
+    </div>
+    <div class="form-group col-md-4">
+      <label>Argentinos</label>
+      <input type="number" class="form-control" value={{cambioChileno}} disabled>
+    </div>
+
+  </div>
